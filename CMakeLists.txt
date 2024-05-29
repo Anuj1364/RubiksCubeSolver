@@ -3,9 +3,9 @@ project(RubiksCubeSolver)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(RubiksCubeSolver main.cpp
-        cmake-build-debug/GenericRubixCube.cpp
-        cmake-build-debug/GenericRubixCube.h
-        RubiksCube.cpp
-        RubiksCube.h
-)
+set(Headers RubiksCube.h)
+
+add_executable(RubixCubeSolver ${PROJECT_SOURCE_DIR}/ main.cpp RubiksCube.cpp
+        RubiksCube.h)
+
+
