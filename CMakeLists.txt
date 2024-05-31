@@ -8,6 +8,7 @@ set(Headers RubiksCube.h)
 add_executable(RubixCubeSolver ${PROJECT_SOURCE_DIR}/ main.cpp RubiksCube.cpp
         RubiksCube.h
         RubiksCube3dArray.cpp
-        RubiksCube3dArray.cpp)
+        RubiksCube3dArray.cpp
+        RubiksCube1dArray.cpp)
 
 
