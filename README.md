@@ -14,10 +14,6 @@ This project is a comprehensive Rubik's Cube solver that includes three differen
     - [Depth-First Search (DFS)](#depth-first-search-dfs)
     - [Iterative Deepening Depth-First Search (IDDFS)](#iterative-deepening-depth-first-search-iddfs)
     - [Iterative Deepening A* (IDA*)](#iterative-deepening-astar-ida)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [Contributing](#contributing)
-7. [License](#license)
 
 ## Introduction
 
