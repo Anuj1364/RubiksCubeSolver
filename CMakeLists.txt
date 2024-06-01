@@ -1,15 +1,11 @@
-cmake_minimum_required(VERSION 3.28)
-project(RubiksCubeSolver)
+cmake_minimum_required(VERSION 3.20)
+project(rubiks_cube_solver)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 14)
 
-set(Headers RubiksCube.h)
+include_directories(Model)
 
-add_executable(RubixCubeSolver ${PROJECT_SOURCE_DIR}/ main.cpp RubiksCube.cpp
-        RubiksCube.h
-        RubiksCube3dArray.cpp
-        RubiksCube3dArray.cpp
-        RubiksCube1dArray.cpp
-        RubiksCubeBitboard.cpp)
-
-
+add_executable(rubiks_cube_solver
+        Model/RubiksCube.cpp
+        Model/RubiksCube.h
+        main.cpp Model/RubiksCube3dArray.cpp Model/RubiksCube1dArray.cpp Model/RubiksCubeBitboard.cpp Solver/DFSSolver.h Solver/BFSSolver.h Solver/IDDFSSolver.h Model/PatternDatabase/PatternDatabase.h Solver/IDAstarSolver.h PatternDatabases/NibbleArray.cpp PatternDatabases/NibbleArray.h PatternDatabases/PatternDatabase.cpp PatternDatabases/PatternDatabase.h PatternDatabases/PermutationIndexer.h PatternDatabases/CornerPatternDatabase.cpp PatternDatabases/CornerPatternDatabase.h PatternDatabases/CornerDBMaker.cpp PatternDatabases/CornerDBMaker.h PatternDatabases/math.cpp PatternDatabases/math.h)
